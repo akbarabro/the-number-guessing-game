@@ -16,19 +16,19 @@ else {
     console.log("You guess the wrong number")
 };
 
-const again = await inquirer.prompt([{
-    name: "againGuess",
-    message: "Do you want more chance",
-    type: "list",
-    choices: ["Yes","No"]
-}])
+// const again = await inquirer.prompt([{
+//     name: "againGuess",
+//     message: "Do you want more chance",
+//     type: "list",
+//     choices: ["Yes","No"]
+// }])
 
-if (again.choices === "Yes"){
-    continue
+// if (again.choices === "Yes"){
+//     continue
 
-}
-else{
-    console.log("Thanks for play")
-    break
-}
+// }
+// else{
+//     console.log("Thanks for play")
+//     break
+// }
 }
