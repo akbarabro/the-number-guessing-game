@@ -1,7 +1,7 @@
 
 
 import inquirer from "inquirer"
-
+for (let a=0;a<=20;a++){
 const randomNumber:number = Math.floor(Math.random() * 5 + 1 );
 const answer = await inquirer.prompt([{
 name: "numberGuess",
@@ -16,4 +16,19 @@ else {
     console.log("You guess the wrong number")
 };
 
+const again = await inquirer.prompt([{
+    name: "againGuess",
+    message: "Do you want more chance",
+    type: "list",
+    choices: ["Yes","No"]
+}])
 
+if (again.choices === "Yes"){
+    continue
+
+}
+else{
+    console.log("Thanks for play")
+    break
+}
+}
