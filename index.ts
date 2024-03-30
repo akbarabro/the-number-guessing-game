@@ -1,4 +1,4 @@
-
+#! /usr/bin/env node
 
 import inquirer from "inquirer"
 for (let a=0;a<=20;a++){
