@@ -20,7 +20,8 @@ for (let a = 0; a <= 20; a++) {
             type: "list",
             choices: ["Yes", "No"]
         }]);
-    if (again.choices === "Yes") {
+    if (again.againGuess === "Yes") {
+        // console.log(answer.numberGuess)
         continue;
     }
     else {
